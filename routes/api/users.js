@@ -4,7 +4,7 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 
 //Load User model
-const user = require('../../modules/User');
+const User = require('../../modules/User');
 
 //@route GET api/users/test
 //@desc Tests users route
@@ -41,7 +41,7 @@ router.post('/register', (req, res) => {
           newUser.password = hash;
           newUser
             .save()
-            .then((user = res.json(user)))
+            .then((newUser) => res.json(newUser))
             .catch((error) => console.log(error));
         });
       });
@@ -57,8 +57,7 @@ router.post('/login', (req, res) => {
   const password = req.body.password;
 
   //Find the user by email
-  User.findOne({ email })
-    .then((user) => {
+  User.findOne({ email }).then((user) => {
     //Check for user
     if (!user) {
       return res.status(404).json({ email: 'User not found' });
