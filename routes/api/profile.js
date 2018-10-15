@@ -1,5 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+const passport = require('passport');
+
+//Load Profile model
+const Profile = require('../../modules/profile');
 
 //@route GET api/profile/test
 //@desc Tests profile route
