@@ -9,9 +9,9 @@ const validateExperienceInput = require('../../validation/experience');
 const validateEducationInput = require('../../validation/education');
 
 //Load Profile model
-const Profile = require('../../modules/Profile');
+const Profile = require('../../models/Profile');
 //Load User model
-const User = require('../../modules/User');
+const User = require('../../models/User');
 
 //@route GET api/profile/test
 //@desc Tests profile route
