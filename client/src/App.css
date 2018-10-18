@@ -1,0 +1,35 @@
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #34a7aa,
+    #0f8cac,
+    #396ea0,
+    #574e81,
+    #612e56
+  );
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
