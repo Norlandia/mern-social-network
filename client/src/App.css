@@ -1,9 +1,5 @@
-img {
-  width: 100%;
-}
-
-.landing {
-  position: relative;
+body {
+  height: 100vh;
   background-image: linear-gradient(
     to bottom,
     #34a7aa,
@@ -12,7 +8,22 @@ img {
     #574e81,
     #612e56
   );
-  height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.spider-logo-top {
+  width: 7%;
+  margin-right: 12px;
+}
+
+.spider-logo-main {
+  width: 40%;
+}
+
+.landing {
   margin-top: -24px;
   margin-bottom: -50px;
 }
