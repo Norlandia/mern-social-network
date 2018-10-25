@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #34a7aa,
+    #0f8cac,
+    #396ea0,
+    #574e81,
+    #612e56
+  );
+}
+
+.container {
+  max-width: 100%;
+}
